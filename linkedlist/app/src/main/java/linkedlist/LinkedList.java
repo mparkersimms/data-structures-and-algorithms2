@@ -12,23 +12,15 @@ public class LinkedList {
     }
     public boolean includes(Object value) {
         Node currentNode = this.head;
-
-        boolean result = false;
-        while (currentNode.value != null) {
-            System.out.println("this is rediculous");
+        while (currentNode != null) {
             if (currentNode.value == value) {
-                result = true;
                 System.out.println("true");
-                return result;
-            } else {
-                System.out.println("this is the boolean answer2 " + currentNode.value + " " +  value);
-                currentNode = currentNode.next;
-
+                return true;
             }
-//        System.out.println("this is the boolean answer " + result);
-//        return result;
+            currentNode = currentNode.next;
         }
-        return result;
+        System.out.println("false");
+        return false;
         }
 
 
@@ -41,7 +33,7 @@ public class LinkedList {
             currentNode = currentNode.next;
         }
 
-        return "This is a test string " + resultString;
+        return resultString;
     }
 
 }
