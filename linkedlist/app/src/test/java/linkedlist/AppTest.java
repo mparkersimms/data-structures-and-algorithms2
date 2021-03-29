@@ -34,5 +34,44 @@ public class AppTest {
         String testString = "{Do},{you},{like},{this},{test?},";
         assertEquals("The linked list should return a string of the items in the list", testString,linkedList.toString() );
     }
+    @Test public void appendTest(){
+        LinkedList linkedList = new LinkedList();
+        linkedList.insert("test?");
+        linkedList.insert("this");
+        linkedList.insert("like");
+        linkedList.insert("you");
+        linkedList.insert("Do");
+        linkedList.append("tell me..");
+        System.out.println(linkedList.toString());
+        String testString = "{Do},{you},{like},{this},{test?},{tell me..},";
+        assertEquals("The linked list should return a string of the items in the list", testString,linkedList.toString() );
+    }
+    @Test public void insertBeforeTest(){
+        LinkedList linkedList = new LinkedList();
+        linkedList.insert("test?");
+        linkedList.insert("this");
+        linkedList.insert("like");
+        linkedList.insert("you");
+        linkedList.insert("Do");
+        linkedList.insertBefore("test?", "new");
+        System.out.println(linkedList.toString());
+        String testString = "{Do},{you},{like},{this},{new},{test?},";
+        assertEquals("The linked list should return a string of the items in the list", testString,linkedList.toString() );
+
+    }
+    @Test public void insertAfterTest(){
+        LinkedList linkedList = new LinkedList();
+        linkedList.insert("test?");
+        linkedList.insert("this");
+        linkedList.insert("like");
+        linkedList.insert("you");
+        linkedList.insert("Do");
+        linkedList.insertBefore("test?", "new");
+        linkedList.insertAfter("new","really new");
+        System.out.println(linkedList.toString());
+        String testString = "{Do},{you},{like},{this},{new},{really new},{test?},";
+        assertEquals("The linked list should return a string of the items in the list", testString,linkedList.toString());
+
+    }
 
 }
