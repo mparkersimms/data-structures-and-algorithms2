@@ -19,7 +19,11 @@ public class App {
             linkList.insert("two");
             linkList.insert(2);
             linkList.insert(3);
-            linkList.includes(3);
+            linkList.append("appended");
+            linkList.append("Totally");
+            linkList.insertBefore("world", "new");
+            linkList.insertBefore("test", "please");
+            linkList.insertAfter("please", "and thank you");
 
             System.out.println(linkList.toString());
 
