@@ -7,8 +7,32 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class AppTest {
-    @Test public void testAppHasAGreeting() {
-        App classUnderTest = new App();
-        assertNotNull("app should have a greeting", classUnderTest.getGreeting());
+    @Test public void linkedListTest() {
+       LinkedList linkedList = new LinkedList();
+       assertNull("this should return null", linkedList.head);
+       linkedList.insert(6);
+       assertEquals("the head should return 6", 6, linkedList.head.value);
+       linkedList.insert("hello");
+       assertEquals("the head should return hello", "hello", linkedList.head.value);
+       assertEquals("the second node value should equal 6", 6, linkedList.head.next.value);
     }
+    @Test public void linkedListIncludesTest(){
+        LinkedList linkedList = new LinkedList();
+        linkedList.insert("test");
+        assertTrue("the linkedlist should include test", linkedList.includes("test"));
+        assertFalse("the linkedlist should return false with an object that is not in the " +
+                "list", linkedList.includes("anything"));
+    }
+    @Test public void toStringTest(){
+        LinkedList linkedList = new LinkedList();
+        linkedList.insert("test?");
+        linkedList.insert("this");
+        linkedList.insert("like");
+        linkedList.insert("you");
+        linkedList.insert("Do");
+        System.out.println(linkedList.toString());
+        String testString = "{Do},{you},{like},{this},{test?},";
+        assertEquals("The linked list should return a string of the items in the list", testString,linkedList.toString() );
+    }
+
 }

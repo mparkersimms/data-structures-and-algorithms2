@@ -15,12 +15,13 @@ public class App {
             linkList.insert(56785679);
             linkList.insert("world");
             linkList.insert("hello");
-            linkList.includes(34536);
+            linkList.insert("test");
+            linkList.insert("two");
+            linkList.insert(2);
+            linkList.insert(3);
+            linkList.includes(3);
 
-
-//            boolean result = linkList.includes(3);
             System.out.println(linkList.toString());
-//            System.out.println(linkList.includes("1234"));
 
         }catch(Exception e){
             System.out.println(e);
