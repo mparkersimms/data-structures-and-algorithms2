@@ -38,7 +38,6 @@ public class LinkedList {
 
     public void append(Object value){
         Node currentNode = this.head;
-
         while(currentNode != null){
             if(currentNode.next == null) {
                 Node newNode = new Node(value);
@@ -77,6 +76,31 @@ public class LinkedList {
         }
     }
 
+    public int counter(){
+        Node currentNode = this.head;
+        int counter = 0;
+        while(currentNode != null) {
+            counter ++;
+            currentNode = currentNode.next;
+        }
+        return counter;
+    }
+
+    public Object kthFromEnd(int k){
+        int count = counter();
+        int newCount = (count - k - 1);
+        Node currentNode = this.head;
+        while(currentNode != null) {
+            if(newCount < 0) {
+                return "Sorry that is not possible";
+            }else if (newCount == 0){
+                return currentNode.value;
+            }
+            currentNode = currentNode.next;
+            newCount --;
+        }
+        return currentNode.value;
+    }
 }
 
 
