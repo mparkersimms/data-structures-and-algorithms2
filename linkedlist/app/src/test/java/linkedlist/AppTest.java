@@ -162,4 +162,23 @@ public class AppTest {
         assertEquals("This tests that the value is the same", expected1, actual1);
 
     }
+    @Test public void zipListsTest(){
+        LinkedList listOne = new LinkedList();
+        LinkedList listTwo = new LinkedList();
+        listOne.insert(1);
+        listOne.append(2);
+        listTwo.insert(4);
+        listTwo.append(5);
+        listTwo.append(6);
+        listTwo.append(7);
+        String actual = (LinkedList.zipLists(listOne,listTwo)).toString();
+        String expected = "{1},{4},{2},{5},{6},{7},";
+        LinkedList.zipLists(listOne, listTwo);
+
+        assertEquals(expected, actual);
+
+
+
+
+    }
 }
