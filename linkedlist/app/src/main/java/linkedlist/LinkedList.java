@@ -101,6 +101,32 @@ public class LinkedList {
         }
         return currentNode.value;
     }
+
+    public static LinkedList zipLists(LinkedList listOne, LinkedList listTwo){
+        Node currentNode1 = listOne.head;
+        Node currentNode2 = listTwo.head;
+        LinkedList newLinkedList = new LinkedList();
+        while (currentNode1 != null || currentNode2 != null) {
+            if (newLinkedList.head == null) {
+                if(currentNode1 != null) {
+                    newLinkedList.insert(currentNode1.value);
+                    currentNode1 = currentNode1.next;
+                }else {
+                    newLinkedList.insert(currentNode2.value);
+                    currentNode2 = currentNode2.next;
+                }
+            }else if(currentNode1 != null) {
+                newLinkedList.append(currentNode1.value);
+                currentNode1 = currentNode1.next;
+            }
+            if (currentNode2 != null) {
+                newLinkedList.append(currentNode2.value);
+                currentNode2 = currentNode2.next;
+            }
+        }
+
+        return newLinkedList;
+    }
 }
 
 
