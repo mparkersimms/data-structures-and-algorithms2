@@ -69,3 +69,6 @@ deQueue:
 Time: O(n);
 space: O(1);
 
+## whiteboards
+
+![whiteboard psuedoqueue](../stacksandqueues/assets/psuedocode.png)
