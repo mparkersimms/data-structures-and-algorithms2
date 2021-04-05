@@ -55,4 +55,31 @@ public class AppTest {
         System.out.println(testQueue);
 
     }
+    @Test public void psuedoQueueTest(){
+
+        PsuedoQueue newQ = new PsuedoQueue();
+        System.out.println(newQ);
+        newQ.enQueue("first value");
+        assertNotNull(newQ.stackOne);
+        assertNull(newQ.stackTwo.top);
+        assertNull(newQ.stackOne.top.next);
+        newQ.enQueue("second value");
+        Object expected = "first value";
+        assertEquals(expected, newQ.stackOne.top.next.value);
+
+        PsuedoQueue newQ2 = new PsuedoQueue();
+        newQ2.stackTwo.push("first new value");
+        newQ2.enQueue("second new value");
+        assertNotNull(newQ2.stackOne);
+        assertNull(newQ2.stackTwo.top);
+        assertNotNull(newQ.stackOne.top.next);
+        Object expected2 = "first new value";
+        assertEquals(expected2, newQ2.stackOne.top.next.value);
+
+        newQ.deQueue();
+        Object expected3 = "second value";
+        assertEquals(expected3, newQ.stackTwo.top.value);
+        assertNull(newQ.stackOne.top);
+
+    }
 }
