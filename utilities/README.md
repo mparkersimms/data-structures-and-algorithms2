@@ -33,3 +33,8 @@ challenge 13
 
 Time: O(n);
 Space: O(1);
+
+
+## Whiteboard
+
+![Multi-Bracket-Validation](../utilities/assets/multi-bracket-validation.png)
