@@ -15,12 +15,8 @@ public class AnimalShelterTester {
         kitsAndPups.enQueue(jeff);
         kitsAndPups.enQueue(josie);
         kitsAndPups.enQueue(julie);
-        System.out.println(kitsAndPups.toString());
         System.out.println(kitsAndPups.Cats.front.value);
-        System.out.println(kitsAndPups.deQueue("cat"));
-        System.out.println(kitsAndPups.deQueue("dog"));
-        System.out.println(kitsAndPups.toString());
-        System.out.println(kitsAndPups.findSmallestRosterNumber());
+
 
 
 

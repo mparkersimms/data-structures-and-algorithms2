@@ -35,8 +35,8 @@ public class AnimalShelter {
         }
     }
     public Object findSmallestRosterNumber() {
-        Dogs.peek();
-
+        System.out.println(Dogs.front.value);
+        return Dogs.peek();
 
     }
     public String toString() {
