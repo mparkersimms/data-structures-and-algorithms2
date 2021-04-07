@@ -16,7 +16,7 @@ cue that corresponds with its type (dog or Cat);
 Create a deQueue method that takes a parameter either dog or cat, and 
 returns the animal of said type that has been in the animal shelter the longest
 
-code Challenge 13
+code Challenge 13  
 
 Iterate through the string. If the character is a opening bracket, push it into a stack. if the character is a closing bracket
 determine if  the top of the stack is the opening bracket of the same type. if it is, continue, if it is not, return false. 
