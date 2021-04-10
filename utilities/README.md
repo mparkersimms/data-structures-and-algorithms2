@@ -9,6 +9,10 @@ Code Challenge 13
 
 Create a method that takes in a string, and returns a boolean if the string contains balanced brackets or not. 
 
+Code Challenge 14 
+
+Create a Tree class with traversals called preOrder, inOrder, and postOrder that return an array of values ordered appropriately. 
+
 ## Approach 
 code challenge 12
 create an enQueue method that takes in an animal and places it in the 
@@ -22,6 +26,10 @@ Iterate through the string. If the character is a opening bracket, push it into 
 determine if  the top of the stack is the opening bracket of the same type. if it is, continue, if it is not, return false. 
 once the entire string has been looped through, determine if the stack is empty. If it is, return true, if not return false. 
 
+Code Challenge 14
+
+The tree class uses Nodes as a linked list tree to order nodes with a value, a left and a right node. By assigning each new value a 
+specific place with in the tree, the traversal methods are created using a stack, to determine which order the values gets added to the arraylist.
 
 ## Big O 
 Challenge 12
@@ -34,7 +42,9 @@ challenge 13
 Time: O(n);
 Space: O(1);
 
-
+Challenge 14:
+Time: O(log(n))
+Space O(n);
 ## Whiteboard
 
 ![Multi-Bracket-Validation](../utilities/assets/multi-bracket-validation.png)
