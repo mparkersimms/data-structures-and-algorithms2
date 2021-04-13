@@ -13,6 +13,9 @@ Code Challenge 14
 
 Create a Tree class with traversals called preOrder, inOrder, and postOrder that return an array of values ordered appropriately. 
 
+Code Challenge 15 
+Create a method called findMaximumValue that takes finds the maximum value of nodes in a binary tree. 
+
 ## Approach 
 code challenge 12
 create an enQueue method that takes in an animal and places it in the 
@@ -31,6 +34,14 @@ Code Challenge 14
 The tree class uses Nodes as a linked list tree to order nodes with a value, a left and a right node. By assigning each new value a 
 specific place with in the tree, the traversal methods are created using a stack, to determine which order the values gets added to the arraylist.
 
+
+Code Challenge 16
+
+The method findMaximumValue is built into the tree class, and takes the tree, uses a recursive approach to set the value of the root node to the
+maximum value, then checks to see if a node.left exists and if so checks to see if the value of the node is greater than the existing max value
+if it does, the value is replaced, and then calls the method again on the next .left node. if the left node, does not exist it looks to see if there 
+is a node.right. if there is, it calles the same function on the .right node, and so on a so forth throughout the entire tree. The method then 
+returns the max value as an integer. 
 ## Big O 
 Challenge 12
 Time: O(1);
@@ -45,6 +56,11 @@ Space: O(1);
 Challenge 14:
 Time: O(log(n))
 Space O(n);
+
+Challenge 16
+Time: O(n);
+Space: O(1);
+
 ## Whiteboard
 
 ![Multi-Bracket-Validation](../utilities/assets/multi-bracket-validation.png)

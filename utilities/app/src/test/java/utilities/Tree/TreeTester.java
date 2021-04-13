@@ -82,9 +82,20 @@ public class TreeTester {
         System.out.println(binaryTree.contains("d"));
         System.out.println(binaryTree.contains("e"));
 
+    }
+    @Test public void maxValueTest() throws Exception {
+        Tree testTree = new Tree();
+        testTree.root = new Node(1, null, null);
+        testTree.root.left = new Node(2, null, null);
+        testTree.root.right = new Node(3, null, null);
+        testTree.root.left.left = new Node(8, null, null);
+        testTree.root.left.right = new Node(5, null, null);
+        testTree.root.right.left = new Node(9, null, null);
 
-
-
+        System.out.println(testTree.findMaximumValue());
+        Object expected4 = 9;
+        Object actual4 = testTree.findMaximumValue();
+        assertEquals(expected4, actual4);
     }
 
 }
