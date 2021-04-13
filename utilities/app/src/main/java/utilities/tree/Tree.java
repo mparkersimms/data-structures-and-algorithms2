@@ -90,6 +90,21 @@ public class Tree {
         if (node.right != null) this._postOrderTraverseRecursive(node.right);
         resultList.add(node.value);
     }
+    int maxValue;
+    public int findMaximumValue () throws Exception{
+        maxValue = 0;
+        this._findMaximumValue(this.root);
+        return maxValue;
+    }
+    public void _findMaximumValue(Node node) throws Exception{
+        if(node == null) throw new Exception("The list is empty");
+        int nodeAsAnInt = (int)node.value;
+        if(nodeAsAnInt > maxValue){
+            maxValue = nodeAsAnInt;
+        }
+        if(node.left != null) this._findMaximumValue(node.left);
+        if(node.right != null) this._findMaximumValue(node.right);
+    }
 
 }
 //}
