@@ -13,8 +13,11 @@ Code Challenge 14
 
 Create a Tree class with traversals called preOrder, inOrder, and postOrder that return an array of values ordered appropriately. 
 
-Code Challenge 15 
+Code Challenge 16 
 Create a method called findMaximumValue that takes finds the maximum value of nodes in a binary tree. 
+
+Code Challenge 17
+Create a method that uses the breadth first approach to finding all the values in a binary tree. 
 
 ## Approach 
 code challenge 12
@@ -42,6 +45,12 @@ maximum value, then checks to see if a node.left exists and if so checks to see 
 if it does, the value is replaced, and then calls the method again on the next .left node. if the left node, does not exist it looks to see if there 
 is a node.right. if there is, it calles the same function on the .right node, and so on a so forth throughout the entire tree. The method then 
 returns the max value as an integer. 
+
+Code Challenge 17
+The method breadthFirstTraversal is built using a queue to temporarily hold the nodes of the binary tree. First, the tree root is added to the 
+queue, then removed from the queue and added to an array list. as a value is removed from the queue, its left and right nodes are added to 
+the queue respectively if they exist. As long as the queue has values, the while loop will continue to loop and add values from the queue to
+the array list. 
 ## Big O 
 Challenge 12
 Time: O(1);
@@ -61,6 +70,10 @@ Challenge 16
 Time: O(n);
 Space: O(1);
 
+Challenge 17 
+Time: O(n);
+Space: O(n);
 ## Whiteboard
 
 ![Multi-Bracket-Validation](../utilities/assets/multi-bracket-validation.png)
+![Breadth First Traversal](../utilities/assets/BreadthFirst.png)

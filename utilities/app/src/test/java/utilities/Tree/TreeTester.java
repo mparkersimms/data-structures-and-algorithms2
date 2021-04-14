@@ -98,4 +98,17 @@ public class TreeTester {
         assertEquals(expected4, actual4);
     }
 
+    @Test public void breadthFirstTest() throws Exception {
+        Tree testTree2 = new Tree();
+        testTree2.root = new Node(1, null, null);
+        testTree2.root.left = new Node(2, null, null);
+        testTree2.root.right = new Node(3, null, null);
+        testTree2.root.left.left = new Node(8, null, null);
+        testTree2.root.left.right = new Node(5, null, null);
+        testTree2.root.right.left = new Node(9, null, null);
+
+        System.out.println(testTree2.breadthFirstTraversal());
+
+    }
+
 }
