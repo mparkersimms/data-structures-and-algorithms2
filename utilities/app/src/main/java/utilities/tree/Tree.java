@@ -1,8 +1,6 @@
 package utilities.tree;
 
-
-import java.util.ArrayList;
-import java.util.Stack;
+import java.util.*;
 
 public class Tree {
     public Node root = null;
@@ -105,6 +103,25 @@ public class Tree {
         if(node.left != null) this._findMaximumValue(node.left);
         if(node.right != null) this._findMaximumValue(node.right);
     }
+
+  public ArrayList breadthFirstTraversal() throws Exception {
+        resultList.clear();
+        Queue<Node> queue = new LinkedList<>();
+        queue.add(this.root);
+        while(!queue.isEmpty()) {
+            Node newNode = queue.poll();
+            resultList.add(newNode.value);
+            if(newNode.left != null) {
+                queue.add(newNode.left);
+            }
+            if(newNode.right != null){
+                queue.add(newNode.right);
+            }
+
+  }
+        return resultList;
+
+  }
 
 }
 //}
