@@ -19,6 +19,11 @@ Create a method called findMaximumValue that takes finds the maximum value of no
 Code Challenge 17
 Create a method that uses the breadth first approach to finding all the values in a binary tree. 
 
+Code Challenge 18
+Code Challenge 18
+Create a method FizzBuzzTree that takes in a tree and returns a new tree with the values of each node changed to "fizz" if it is divisible by 3,
+"Buzz" if it is divisible by 5, and "FizzBuzz" if it is divisible by 3 and 5. the value of each node will stay the same if it doesnt
+fit either of those cases.
 ## Approach 
 code challenge 12
 create an enQueue method that takes in an animal and places it in the 
@@ -51,6 +56,11 @@ The method breadthFirstTraversal is built using a queue to temporarily hold the 
 queue, then removed from the queue and added to an array list. as a value is removed from the queue, its left and right nodes are added to 
 the queue respectively if they exist. As long as the queue has values, the while loop will continue to loop and add values from the queue to
 the array list. 
+
+Code Challenge 18 
+The method FizzBuzzTree takes in a tree and returns a new tree with the values of each node changed to "fizz" if it is divisible by 3, 
+"Buzz" if it is divisible by 5, and "FizzBuzz" if it is divisible by 3 and 5. the value of each node will stay the same if it doesnt
+fit either of those cases. 
 ## Big O 
 Challenge 12
 Time: O(1);
@@ -73,7 +83,13 @@ Space: O(1);
 Challenge 17 
 Time: O(n);
 Space: O(n);
+
+Challenge 18 
+Time: O(n);
+Space: O(n);
+
 ## Whiteboard
 
 ![Multi-Bracket-Validation](../utilities/assets/multi-bracket-validation.png)
 ![Breadth First Traversal](../utilities/assets/BreadthFirst.png)
+![FizzBuzzTree](../utilities/assets/FizzBuzzTree.png)
