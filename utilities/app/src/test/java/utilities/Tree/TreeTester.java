@@ -123,6 +123,8 @@ public class TreeTester {
 
         FizzBuzzTree.FizzBuzzTree(testTree);
 
+        System.out.println(testTree.inOrderTraverseRecursive());
+
     }
 
 }

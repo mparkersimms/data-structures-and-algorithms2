@@ -9,8 +9,9 @@ public class FizzBuzzTree {
 
 
     Tree newTree = new Tree();
-    public static void FizzBuzzTree(Tree tree) throws Exception {
+    public static Tree FizzBuzzTree(Tree tree) throws Exception {
         _FizzBuzzTree(tree.root);
+        return tree;
     }
     public static void _FizzBuzzTree(Node node) throws Exception {
         if(node == null) throw new Exception("The tree is empty");
