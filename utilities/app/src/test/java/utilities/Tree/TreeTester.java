@@ -124,6 +124,9 @@ public class TreeTester {
         FizzBuzzTree.FizzBuzzTree(testTree);
 
         System.out.println(testTree.inOrderTraverseRecursive());
+        ArrayList<String> Expected = new ArrayList<>(Arrays.asList("8", "FizzBuzz", "Buzz", "1", "Fizz", "Fizz"));
+        ArrayList<String> Actual = testTree.inOrderTraverseRecursive();
+        assertEquals(Expected, Actual);
 
     }
 
