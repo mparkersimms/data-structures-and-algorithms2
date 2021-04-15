@@ -1,6 +1,7 @@
 package utilities.Tree;
 
 import org.junit.Test;
+import utilities.FizzBuzzTree;
 import utilities.tree.BinarySearchTree;
 import utilities.tree.Node;
 import utilities.tree.Tree;
@@ -108,6 +109,19 @@ public class TreeTester {
         testTree2.root.right.left = new Node(9, null, null);
 
         System.out.println(testTree2.breadthFirstTraversal());
+
+    }
+
+    @Test public void FizzBuzzTest() throws Exception {
+        Tree testTree = new Tree();
+        testTree.root = new Node(1, null, null);
+        testTree.root.left = new Node(15, null, null);
+        testTree.root.right = new Node(3, null, null);
+        testTree.root.left.left = new Node(8, null, null);
+        testTree.root.left.right = new Node(5, null, null);
+        testTree.root.right.left = new Node(9, null, null);
+
+        FizzBuzzTree.FizzBuzzTree(testTree);
 
     }
 
