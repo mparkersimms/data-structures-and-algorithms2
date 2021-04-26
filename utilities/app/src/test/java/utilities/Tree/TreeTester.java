@@ -128,6 +128,9 @@ public class TreeTester {
         ArrayList<String> Actual = testTree.inOrderTraverseRecursive();
         assertEquals(Expected, Actual);
 
+        System.out.println(Math.random());
+
     }
+
 
 }
