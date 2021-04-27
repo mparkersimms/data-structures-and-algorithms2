@@ -3,6 +3,7 @@ package utilities.blogChallengeTester;
 import org.junit.Test;
 import utilities.FizzBuzzTree;
 import utilities.blogChallenges.InsertSort;
+import utilities.blogChallenges.MergeSort;
 import utilities.tree.BinarySearchTree;
 import utilities.tree.Node;
 import utilities.tree.Tree;
@@ -54,6 +55,46 @@ public class BlogChallengeTester {
 
         assertArrayEquals(expected4.toArray(), actual4.toArray());
 
+    }
+
+    @Test
+    public void mergeSortTester(){
+        MergeSort mergeSort = new MergeSort();
+        ArrayList<Integer> newArray = new ArrayList<Integer>(Arrays.asList(8, 4, 23, 42, 16, 15));
+        ArrayList actual = mergeSort.mergeSortArrayRecursive(newArray);
+        ArrayList<Integer> expected = new ArrayList<Integer>(Arrays.asList(4, 8, 15, 16, 23, 42));
+
+        System.out.println(mergeSort.mergeSortArrayRecursive(newArray));
+        assertArrayEquals(expected.toArray(), actual.toArray());
+
+
+        //  Reversed Array Test
+
+        ArrayList<Integer> newArray2 = new ArrayList<Integer>(Arrays.asList(20,18,12,8,5,-2));
+        ArrayList actual2 = mergeSort.mergeSortArrayRecursive(newArray2);
+        ArrayList<Integer> expected2 = new ArrayList<Integer>(Arrays.asList(-2,5,8,12,18,20));
+        System.out.println(actual2);
+
+        assertArrayEquals(expected2.toArray(), actual2.toArray());
+
+//        Duplicates Array Test
+
+        ArrayList<Integer> newArray3 = new ArrayList<Integer>(Arrays.asList(5,12,7,5,5,7));
+        ArrayList actual3 = mergeSort.mergeSortArrayRecursive(newArray3);
+        ArrayList<Integer> expected3 = new ArrayList<Integer>(Arrays.asList(5,5,5,7,7,12));
+        System.out.println(actual3);
+
+        assertArrayEquals(expected3.toArray(), actual3.toArray());
+
+//        Nearly sorted Array test
+
+
+        ArrayList<Integer> newArray4 = new ArrayList<Integer>(Arrays.asList(2,3,5,7,13,11));
+        ArrayList actual4 = mergeSort.mergeSortArrayRecursive(newArray4);
+        ArrayList<Integer> expected4 = new ArrayList<Integer>(Arrays.asList(2,3,5,7,11,13));
+        System.out.println(actual4);
+
+        assertArrayEquals(expected4.toArray(), actual4.toArray());
     }
 
 
