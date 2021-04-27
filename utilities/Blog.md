@@ -4,15 +4,15 @@ In this article I am going to explain how the Insertion Sort method
 for sorting an array works. For this article, I am going to be using 
 the sample array as follows: [8,4,23,42,16,15]. 
 
-![Step 1](../utilities/assets/pseudocode.png)
+![Step 1](assets/blog/pseudocode.png)
 
 The Insertion Sort method/function should return the sample array sorted
-from smallest to largest as such: [p4,8,15,16,23,42].
+from smallest to largest as such: [4,8,15,16,23,42].
 The entire method is completed within one FOR loop as follows: 
 
 
 
-![Step 1](../utilities/assets/step1.png)
+![Step 1](assets/blog/step1.png)
 
 In the first step, we set an integer variable "i" to the integer 1. Then we set an integer 
 variable "j" to be the value of "i" - 1, which in this case is 0.  Then we set a temporary 
@@ -26,18 +26,18 @@ by decrementing "j" which makes it -1 and breaks from the loop, because -1 is le
 Next, the method sets the value of the array at index "j + 1" to the value of "temp" in this 
 case, that is 4. 
 
-![Step 2](../utilities/assets/step2.png)
+![Step 2](assets/blog/step2.png)
 
 In the second step, "i" is set to 2; "j" is set to 1; "temp" is set to 23. Then because
 "temp" is not less than the array at index "j" or 8, the while loop is skipped, 
 and nothing changes about the array. 
 
-![Step 3](../utilities/assets/step3.png)
+![Step 3](assets/blog/step3.png)
 
 In the third step, "i" is set to 3, "j" is set to 2; "temp" is 42. The WHILE loop is skipped again
 because "temp" is not less than the array at index "j" or 23; And nothing changes about the array. 
 
-![Step 4](../utilities/assets/step4.png)
+![Step 4](assets/blog/step4.png)
 
 In step four, "i" is set to 4, "j" to 3, and "temp" to 16. This time, the WHILE loop will not 
 be skipped because "temp" IS less than the array at index "j" or 42. So the array at index "i" 
@@ -46,7 +46,7 @@ the array at index "j" or 23 is run. "temp" is lower, so the value of index 3 is
 set to 1. "temp" is then compared to 8, which "temp" is NOT less than 8 so, the array at index 2 is set 
 to the "temp" value of 16. 
 
-![Step 5](../utilities/assets/step5.png)
+![Step 5](assets/blog/step5.png)
 
 Step five is a very similar repeat of step four, with the "temp" value being set to 15
 then compared to every number previous to it in the array. If the "temp" is smaller than the previous number
