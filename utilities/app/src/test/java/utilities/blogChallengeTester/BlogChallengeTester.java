@@ -4,6 +4,7 @@ import org.junit.Test;
 import utilities.FizzBuzzTree;
 import utilities.blogChallenges.InsertSort;
 import utilities.blogChallenges.MergeSort;
+import utilities.blogChallenges.QuickSort;
 import utilities.tree.BinarySearchTree;
 import utilities.tree.Node;
 import utilities.tree.Tree;
@@ -95,6 +96,36 @@ public class BlogChallengeTester {
         System.out.println(actual4);
 
         assertArrayEquals(expected4.toArray(), actual4.toArray());
+    }
+
+    @Test
+    public void quickSortTester(){
+        int arr[]={8,4,23,42,16,15};
+        int left = 0;
+        int right = arr.length -1;
+        QuickSort quickSortClass = new QuickSort();
+        int actual[] = quickSortClass.quickSort(arr, left, right);
+        System.out.println(Arrays.toString(arr));
+        int expected[] = {4,8,15,16,23,42};
+        assertArrayEquals(expected, actual);
+
+        int arr2[] = {20,18,12,8,5,-2};
+        int actual2[] = quickSortClass.quickSort(arr2, left, right);
+        int expected2[] = {-2,5,8,12,18,20};
+        System.out.println(Arrays.toString(actual2));
+        assertArrayEquals(expected2, actual2);
+
+        int arr3[] = {5,12,7,5,5,7};
+        int actual3[] = quickSortClass.quickSort(arr3, left, right);
+        int expected3[] = {5,5,5,7,7,12};
+        System.out.println(Arrays.toString(actual3));
+        assertArrayEquals(expected3, actual3);
+
+        int arr4[] = {2,3,5,7,13,11};
+        int actual4[] = quickSortClass.quickSort(arr4, left, right);
+        int expected4[] = {2,3,5,7,11,13};
+        System.out.println(Arrays.toString(actual4));
+        assertArrayEquals(expected4, actual4);
     }
 
 
