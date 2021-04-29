@@ -14,7 +14,7 @@ all the numbers that are larger than it are on it's right; then returns its inde
 2. A swap method, that swaps two values within the array.
 
 In this article, I am going to be using the sample array: [8,4,23,42,16,15].
-![step1](assets/Blog3/step1.png)
+![step1](assets/Blog3/Step1.png)
 As you can see in step one, we call the QuickSort method, which compares the left most index, to the right most index
 and determines if the left is smaller than the right. If that is true, then the Partition method is called on the array. 
 The partition method in this case sets the pivot value to be the array at index 5 or "15". It also sets the "low" 
@@ -23,7 +23,7 @@ index, and in this case, "0" through "5". During the FOR loop if the array at in
 pivot value or "15" in this case, the "low" variable is incremented by 1, and the swap method is called on the array
 for index "i" and "low". 
 
-![step2](assets/Blog3/step2.png)
+![step2](assets/Blog3/Step2.png)
 In step two, you can see that the first index that is called is the value of "8" which is lower than 15, so the swap method
 is called and the "8" is swapped with its self. No change to the array. but the "low" value is now "0". 
 Then the "4" is compared to the "15" and again the array does not change at all, but the low value is now "1". 
@@ -33,7 +33,7 @@ The same thing happens to all the remaining numbers in the array, which are all 
 Once the for loop ends, we are left with the array exactly the same as it was when it entered the method, but the "low" 
 value is now set to the index of the last number in the array that was smaller than the pivot value. 
 
-![step3](assets/Blog3/step3.png)
+![step3](assets/Blog3/Step3.png)
 The Swap method is then called on the array, but this time it is for the pivot index, which is the value of "15" and 
 the "low" variable + 1,  which is "2". Now the array changes to [8,4,15,23,42,16], and the partition method then returns 
 the index of "2" knowing that the value at that position is now in its sorted place in the array. All the numbers that 
@@ -41,11 +41,11 @@ are smaller than it are on its left, and the numbers that are larger than it are
 
 Now the QuickSort Method is called on all the numbers to either side of the "15" using the same logic as before.
 
-![step4](assets/Blog3/step4.png)
+![step4](assets/Blog3/Step4.png)
 
 Once each side has completed the Partition method and swap methods, we are left with a completely sorted array. 
 [4,8,15,16,23,42].
-The time efficiency for this method is O(n logn) because there might be an uneven split on either side of the first 
+The time efficiency for this method is O(n log n) because there might be an uneven split on either side of the first 
 partition, depending on how the array is sorted initially. 
 The space efficiency is O(1) because the array is swapped, and there is never any more values added or removed. 
 
