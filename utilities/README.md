@@ -24,6 +24,10 @@ Code Challenge 18
 Create a method FizzBuzzTree that takes in a tree and returns a new tree with the values of each node changed to "fizz" if it is divisible by 3,
 "Buzz" if it is divisible by 5, and "FizzBuzz" if it is divisible by 3 and 5. the value of each node will stay the same if it doesnt
 fit either of those cases.
+
+CodeChallenge 30
+HashTables-
+Create a hashtable with add, contains, get, and hash methods. 
 ## Approach 
 code challenge 12
 create an enQueue method that takes in an animal and places it in the 
@@ -61,6 +65,14 @@ Code Challenge 18
 The method FizzBuzzTree takes in a tree and returns a new tree with the values of each node changed to "fizz" if it is divisible by 3, 
 "Buzz" if it is divisible by 5, and "FizzBuzz" if it is divisible by 3 and 5. the value of each node will stay the same if it doesnt
 fit either of those cases. 
+
+Code Challenge 30
+The approach for this challenge was to create the class "Hashtable" use a constructor to build the hashtable that creates an array of linkelists. 
+The add method takes in a key and a value, and adds that value to the linked list at the key. The contains method takes in a key, and returns a boolean 
+of whether or not the hashtable has a value at that key. The contains method takes in a key, and returns the linkedlist at that key. The hash method 
+takes a key, changes the key into a string. Then gets the character value of each index in the string. Adds them together and then gets the dirivitive of 
+the that number from the size of the hashtable its self. Allowing any string or number or series of characters to be used as the key, which is 
+always going to return a number between 0 and the length of the hashtable. 
 ## Big O 
 Challenge 12
 Time: O(1);
@@ -87,6 +99,7 @@ Space: O(n);
 Challenge 18 
 Time: O(n);
 Space: O(n);
+
 
 ## Whiteboard
 
