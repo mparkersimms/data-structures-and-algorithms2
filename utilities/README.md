@@ -28,6 +28,9 @@ fit either of those cases.
 CodeChallenge 30
 HashTables-
 Create a hashtable with add, contains, get, and hash methods. 
+
+CodeChallenge 31
+Hashtables - repeated words
 ## Approach 
 code challenge 12
 create an enQueue method that takes in an animal and places it in the 
@@ -73,6 +76,13 @@ of whether or not the hashtable has a value at that key. The contains method tak
 takes a key, changes the key into a string. Then gets the character value of each index in the string. Adds them together and then gets the dirivitive of 
 the that number from the size of the hashtable its self. Allowing any string or number or series of characters to be used as the key, which is 
 always going to return a number between 0 and the length of the hashtable. 
+
+Code Challenge 31
+This challenge used a method that took in a long string, and returned the first word that was repeated in that string. The method split the 
+string into an array of individual words. Then used an IF statement to determine if each word was already in the hashtable, if it came across a 
+word that was already used as a "key" in the table, it saved that word and continued adding all the unique words to the table. Then it returned the
+first word that was repeated.
+
 ## Big O 
 Challenge 12
 Time: O(1);
@@ -100,6 +110,9 @@ Challenge 18
 Time: O(n);
 Space: O(n);
 
+Challenge 31 
+Time: O(1)
+Space: O(n)
 
 ## Whiteboard
 
