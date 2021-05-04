@@ -13,7 +13,7 @@ public class HashtableTest {
     @Test 
     public void hashtableBuilderTester(){
 //        ====== build new HashTable======
-        Hashtable testTable = new Hashtable(5);
+        Hashtable testTable = new Hashtable( 5);
 
 //        ====== add elements to the hashtable =====
         testTable.add(1, "first");
@@ -23,6 +23,7 @@ public class HashtableTest {
         testTable.add(0, "zero");
         testTable.add(1, "airplane");
         testTable.add(2, 4);
+
 //          ===== test the add and get methods =====
         LinkedList<Object> expected = new LinkedList<>();
         expected.add("dog");
@@ -36,7 +37,6 @@ public class HashtableTest {
         assertEquals(expected1, actual1);
 
 //        ===== testing contains method =======
-
         assertTrue(testTable.contains(0));
 
         assertFalse(testTable.contains(4));
@@ -49,5 +49,8 @@ public class HashtableTest {
         int hashedTestKey2 = testTable.hash("helloworld");
         assertTrue(hashedTestKey2 >= 0 && hashedTestKey2 <= 5);
 
+        System.out.println(testTable.get(2));
+
     }
+
 }
