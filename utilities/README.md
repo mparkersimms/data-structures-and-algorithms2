@@ -31,6 +31,9 @@ Create a hashtable with add, contains, get, and hash methods.
 
 CodeChallenge 31
 Hashtables - repeated words
+
+Code Challenge 32
+HashTables - Tree Intersection
 ## Approach 
 code challenge 12
 create an enQueue method that takes in an animal and places it in the 
@@ -83,6 +86,12 @@ string into an array of individual words. Then used an IF statement to determine
 word that was already used as a "key" in the table, it saved that word and continued adding all the unique words to the table. Then it returned the
 first word that was repeated.
 
+Code Challenge 32
+This challenge is designed to take in two trees and return a list of all the values that are in both trees. The method takes in two trees as arguments, 
+iterates through each of the trees and creates an arraylist for each of them. Then iterates through the first tree's array and adds all the values to
+a hashtable using the values in the array as the keys and the number 1 as the value. Then iterates through the second arraylist, comparing each 
+value to the keys in the hashtable, and if there is a match, adds that key to another array, and increments the value in the hashtable. 
+Once the second arraylist has been comppletely interated through, The method returns the results array. 
 ## Big O 
 Challenge 12
 Time: O(1);
@@ -114,8 +123,13 @@ Challenge 31
 Time: O(1)
 Space: O(n)
 
+Challenge 32
+Time: O(n);
+Space: O(n);
+
 ## Whiteboard
 
 ![Multi-Bracket-Validation](../utilities/assets/multi-bracket-validation.png)
 ![Breadth First Traversal](../utilities/assets/BreadthFirst.png)
 ![FizzBuzzTree](../utilities/assets/FizzBuzzTree.png)
+![TreeIntersection](../utilities/assets/treeIntersection.png)
