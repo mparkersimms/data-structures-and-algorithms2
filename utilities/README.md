@@ -34,6 +34,9 @@ Hashtables - repeated words
 
 Code Challenge 32
 HashTables - Tree Intersection
+
+Code Challenge 33
+HashTables LeftJoin
 ## Approach 
 code challenge 12
 create an enQueue method that takes in an animal and places it in the 
@@ -91,7 +94,12 @@ This challenge is designed to take in two trees and return a list of all the val
 iterates through each of the trees and creates an arraylist for each of them. Then iterates through the first tree's array and adds all the values to
 a hashtable using the values in the array as the keys and the number 1 as the value. Then iterates through the second arraylist, comparing each 
 value to the keys in the hashtable, and if there is a match, adds that key to another array, and increments the value in the hashtable. 
-Once the second arraylist has been comppletely interated through, The method returns the results array. 
+Once the second arraylist has been comppletely interated through, The method returns the results array.
+
+Code Challenge 33
+This challenge was about doing a leftjoin on two hashtables. If the both of the hashtables had the same key, 
+then add the key, and both values to a list. If the second table did not have the the key that the first table has
+then add NULL to the list. Do not add the key and value if only the second table had the key. 
 ## Big O 
 Challenge 12
 Time: O(1);
@@ -127,9 +135,13 @@ Challenge 32
 Time: O(n);
 Space: O(n);
 
+Challenge 33
+Time:O(n)
+Space: O(n)
 ## Whiteboard
 
 ![Multi-Bracket-Validation](../utilities/assets/multi-bracket-validation.png)
 ![Breadth First Traversal](../utilities/assets/BreadthFirst.png)
 ![FizzBuzzTree](../utilities/assets/FizzBuzzTree.png)
 ![TreeIntersection](../utilities/assets/treeIntersection.png)
+![left Join](../utilities/assets/leftJoin.png)
