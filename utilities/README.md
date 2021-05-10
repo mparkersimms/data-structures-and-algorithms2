@@ -37,6 +37,9 @@ HashTables - Tree Intersection
 
 Code Challenge 33
 HashTables LeftJoin
+
+Code Challenge 35 
+Graphs - create a graph with addVertex, addEdge, getNeighbors, getVertexes, getSize methods. 
 ## Approach 
 code challenge 12
 create an enQueue method that takes in an animal and places it in the 
@@ -100,6 +103,15 @@ Code Challenge 33
 This challenge was about doing a leftjoin on two hashtables. If the both of the hashtables had the same key, 
 then add the key, and both values to a list. If the second table did not have the the key that the first table has
 then add NULL to the list. Do not add the key and value if only the second table had the key. 
+
+Code Challenge 35
+This challenge was all about graphs. Creating graphs with vertexes and edges. First I constructed a graph class, then 
+vertex class and an edge class. The Graph class holds onto a list of vertexes and a list of edges. Each vertex holds
+onto a value and a list of edges. Each edge holds on to two vertexes and an optional "weight" between the two. The 
+addVertex adds a vertex to the list of vertex in that graph, the addEdge method takes in two vertexes and an optional
+weight and holds on to that connection. The getVertexes method return the list of vertexes for that graph, and the 
+getNeighbors method takes in a vertex and returns all of the edges that that vertex has. The getSize method returns
+the size of the list of vertexes for the given graph. 
 ## Big O 
 Challenge 12
 Time: O(1);
@@ -138,6 +150,10 @@ Space: O(n);
 Challenge 33
 Time:O(n)
 Space: O(n)
+
+Challenge 35
+Time: O(n);
+Space: O(n);
 ## Whiteboard
 
 ![Multi-Bracket-Validation](../utilities/assets/multi-bracket-validation.png)

@@ -26,5 +26,6 @@ public class LeftJoinTester {
 
         LeftJoin leftjoin = new LeftJoin();
         leftjoin.leftJoin(ht1, ht2);
+        System.out.println(Math.random());
     }
 }
