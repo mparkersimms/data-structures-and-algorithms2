@@ -40,6 +40,9 @@ HashTables LeftJoin
 
 Code Challenge 35 
 Graphs - create a graph with addVertex, addEdge, getNeighbors, getVertexes, getSize methods. 
+
+Code Challenge 36 
+Graphs - breadthFirstTraversal
 ## Approach 
 code challenge 12
 create an enQueue method that takes in an animal and places it in the 
@@ -112,6 +115,16 @@ addVertex adds a vertex to the list of vertex in that graph, the addEdge method 
 weight and holds on to that connection. The getVertexes method return the list of vertexes for that graph, and the 
 getNeighbors method takes in a vertex and returns all of the edges that that vertex has. The getSize method returns
 the size of the list of vertexes for the given graph. 
+
+Code Challenge 36 
+This challenge was about creating a breadth first traversal of the vertexes in a graph. I started with taking in a vertex
+creating a new Queue and a new Set. The method takes the given vertex value and adds to the queue, then uses the poll()
+method to remove the top of the queue and add that value to the set which is a linkedHashSet that keeps the order of the 
+values added to it, and avoids duplicates. Then the method looks at the values of all of the edges for the given vertex
+and if the set does not contian them, then adds each one to the queue. While the queue is not empty, this process is 
+repeated and then the method returns the set. The set is comprised of all of the values of each vertex that is connected 
+with edges in the graph, in order that they are visited. 
+
 ## Big O 
 Challenge 12
 Time: O(1);
@@ -153,6 +166,10 @@ Space: O(n)
 
 Challenge 35
 Time: O(n);
+Space: O(n);
+
+Challenge 36 
+Time: O(N);
 Space: O(n);
 ## Whiteboard
 
