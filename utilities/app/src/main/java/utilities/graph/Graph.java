@@ -71,7 +71,7 @@ public class Graph {
     }
 
     public static class Vertex{
-        Object value;
+        public Object value;
         public List<Edge> edges = new ArrayList<>();
 
         public Vertex(Object value) {
@@ -81,9 +81,9 @@ public class Graph {
     }
 
     public static class Edge{
-        Vertex vertex1;
-        Vertex vertex2;
-        Object weight;
+        public Vertex vertex1;
+        public Vertex vertex2;
+        public Object weight;
 
         public Edge(Vertex vertex1, Vertex vertex2) {
             this.vertex1 = vertex1;
