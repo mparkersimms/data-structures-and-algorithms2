@@ -36,15 +36,15 @@ public class Graph {
         }
     }
 
-    public List getVertexes(){
-        List<Object> vertexNames = new ArrayList<>();
+    public List<Vertex> getVertexes(){
+        List<Vertex> vertexNames = new ArrayList<>();
         for(Vertex vertex : this.vertexes){
-            vertexNames.add(vertex.value);
+            vertexNames.add(vertex);
         }
         return vertexNames;
     }
-    public Set getNeighbors(Vertex vertex){
-        Set neighbors = new HashSet<>();
+    public Set<List<Object>> getNeighbors(Vertex vertex){
+        Set<List<Object>> neighbors = new HashSet<>();
         for(int i = 0; i < vertex.edges.size(); i ++){
             List<Object> neighbor = new ArrayList<>();
             Object value1 = vertex.edges.get(i).vertex1.value;
