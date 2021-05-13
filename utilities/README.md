@@ -43,6 +43,9 @@ Graphs - create a graph with addVertex, addEdge, getNeighbors, getVertexes, getS
 
 Code Challenge 36 
 Graphs - breadthFirstTraversal
+
+Code Challenge 38
+Graphs - depth first traversal
 ## Approach 
 code challenge 12
 create an enQueue method that takes in an animal and places it in the 
@@ -125,6 +128,11 @@ and if the set does not contian them, then adds each one to the queue. While the
 repeated and then the method returns the set. The set is comprised of all of the values of each vertex that is connected 
 with edges in the graph, in order that they are visited. 
 
+
+Code Challenge 38
+This challenge was all about doing a depthFirst traversal of a graph. Using the methods I created associated with my 
+Graph class, I created a recursive method that takes in a graph and iterates through the vertexes and their neighbors
+(edges) and collects all the values of each vertex in a depth first process. 
 ## Big O 
 Challenge 12
 Time: O(1);
@@ -169,6 +177,10 @@ Time: O(n);
 Space: O(n);
 
 Challenge 36 
+Time: O(N);
+Space: O(n);
+
+Challenge 38
 Time: O(N);
 Space: O(n);
 ## Whiteboard

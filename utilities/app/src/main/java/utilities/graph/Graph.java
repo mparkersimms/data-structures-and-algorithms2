@@ -4,7 +4,7 @@ import java.util.*;
 
 
 public class Graph {
-    Set<Vertex> vertexes = new HashSet<>();
+    Set<Vertex> vertexes = new LinkedHashSet<>();
     List<Edge> edges = new ArrayList<>();
 
     public Graph() {
@@ -62,6 +62,20 @@ public class Graph {
             }
         neighbors.add(neighbor);
 
+        }
+        return neighbors;
+    }
+
+    public Set<Vertex> getVertexNeighbors(Vertex vertex){
+        Set<Vertex> neighbors = new HashSet<>();
+        for(int i = 0; i < vertex.edges.size(); i ++){
+            Vertex v1 = vertex.edges.get(i).vertex1;
+            Vertex v2 = vertex.edges.get(i).vertex2;
+            if(vertex.value != v1.value){
+                neighbors.add(v1);
+            }if(vertex.value != v2.value){
+                neighbors.add(v2);
+            }
         }
         return neighbors;
     }
