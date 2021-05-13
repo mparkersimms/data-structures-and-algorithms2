@@ -35,6 +35,6 @@ public class GetEdgeTests {
         assertEquals("False, $0", getEdge.getEdge(graph, cities1));
         assertEquals("True, $250", getEdge.getEdge(graph, cities2));
         assertEquals("False, $0", getEdge.getEdge(graph, cities3));
-        
+
     }
 }
