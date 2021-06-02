@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/challenges" />
+        <option name="gradleHome" value="/usr/local/Cellar/gradle/6.8.3/libexec" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/challenges" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/challenges2" />
+        <option name="gradleHome" value="/usr/local/Cellar/gradle/6.8.3/libexec" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/challenges2" />
+            <option value="$PROJECT_DIR$/challenges2/lib" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/linkedlist" />
+        <option name="gradleHome" value="/usr/local/Cellar/gradle/6.8.3/libexec" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/linkedlist" />
+            <option value="$PROJECT_DIR$/linkedlist/app" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/stacksandqueues" />
+        <option name="gradleHome" value="/usr/local/Cellar/gradle/6.8.3/libexec" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/stacksandqueues" />
+            <option value="$PROJECT_DIR$/stacksandqueues/app" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/utilities" />
+        <option name="gradleHome" value="/usr/local/Cellar/gradle/6.8.3/libexec" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/utilities" />
+            <option value="$PROJECT_DIR$/utilities/app" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>
