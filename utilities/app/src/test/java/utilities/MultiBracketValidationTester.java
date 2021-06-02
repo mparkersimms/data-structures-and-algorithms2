@@ -18,9 +18,5 @@ public class MultiBracketValidationTester {
 
         assertTrue(MultiBracketValidation.multiBracketValidation(("((()))")));
 
-
-
-
-
     }
 }
