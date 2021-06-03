@@ -2,13 +2,16 @@ package utilities;
 
 public class Node {
 
-    Object value;
-    Node next;
+    public Object value;
+    public Node next;
 
     Node(Object data, Node node){
         value = data;
         next = node;
 
+    }
+
+    public Node(Object value) {
     }
 
     @Override
