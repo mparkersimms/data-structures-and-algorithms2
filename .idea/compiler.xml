@@ -2,6 +2,7 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
+      <module name="ArrayShift" target="11" />
       <module name="ArrayShift.test" target="11" />
     </bytecodeTargetLevel>
   </component>
